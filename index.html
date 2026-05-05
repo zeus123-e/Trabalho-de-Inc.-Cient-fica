@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="dark scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caso 1: O Escurecimento da Maçã</title>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script>
@@ -43,119 +44,205 @@
             }
         }
     </script>
-    
+
     <style>
         body {
             background-color: #000;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 50% 0%, rgba(26, 26, 26, 0.8) 0%, #000 70%),
-                linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+                linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
             background-size: 100% 100%, 40px 40px, 40px 40px;
             overflow-x: hidden;
         }
+
         .vercel-card {
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             background: rgba(10, 10, 10, 0.7);
             backdrop-filter: blur(10px);
         }
+
         .vercel-card:hover {
             border-color: #666;
             transform: translateY(-8px) scale(1.01);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.05);
         }
+
         /* Esconde a barra de rolagem mas mantém a funcionalidade */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #000; }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
     </style>
 </head>
-<body class="text-vercel-text font-sans antialiased min-h-screen pb-20 selection:bg-vercel-blue selection:text-white relative">
 
-    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-vercel-blue opacity-[0.05] blur-[120px] rounded-full pointer-events-none -z-10"></div>
+<body
+    class="text-vercel-text font-sans antialiased min-h-screen pb-20 selection:bg-vercel-blue selection:text-white relative">
+
+    <div
+        class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-vercel-blue opacity-[0.05] blur-[120px] rounded-full pointer-events-none -z-10">
+    </div>
 
     <header class="max-w-6xl mx-auto px-4 sm:px-6 pt-20 sm:pt-32 pb-16 sm:pb-24 text-center">
-        <div data-aos="fade-down" data-aos-duration="1000" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-vercel-border bg-vercel-card/80 backdrop-blur-sm text-xs font-medium text-vercel-muted mb-8 hover:border-vercel-blue/50 transition-colors cursor-default">
+        <div data-aos="fade-down" data-aos-duration="1000"
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-vercel-border bg-vercel-card/80 backdrop-blur-sm text-xs font-medium text-vercel-muted mb-8 hover:border-vercel-blue/50 transition-colors cursor-default">
             <span class="w-2 h-2 rounded-full bg-vercel-blue animate-pulse"></span>
             Relatório Científico Interativo
         </div>
-        
-        <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-neutral-600 leading-tight">
+
+        <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100"
+            class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-neutral-600 leading-tight">
             Por que as maçãs<br class="hidden sm:block"> escurecem cortadas?
         </h1>
-        
-        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="text-vercel-muted text-base sm:text-xl max-w-2xl mx-auto px-4">
+
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+            class="text-vercel-muted text-base sm:text-xl max-w-2xl mx-auto px-4">
             Uma investigação sobre oxidação enzimática, documentada passo a passo através do método científico.
         </p>
 
         <div data-aos="fade-up" data-aos-delay="500" class="mt-16 animate-bounce flex justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-vercel-muted"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-vercel-muted">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
-            <div data-aos="fade-up" data-aos-delay="100" class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-zinc-800 to-zinc-500 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div data-aos="fade-up" data-aos-delay="100"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-zinc-800 to-zinc-500 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
                 <div class="flex items-center justify-between mb-8">
-                    <div class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-300"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-zinc-300">
+                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
                     </div>
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Alexandre</span>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Alexandre</span>
                 </div>
                 <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">1. Observação</h2>
-                <p class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
-                    <strong>O que chamou atenção:</strong> Ao cortar uma maçã e deixá-la descansando em um prato, notamos que em questão de minutos a polpa da fruta, que originalmente era clara e amarelada, começa a ganhar uma coloração marrom com aspecto oxidado.
+                <p
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
+                    <strong>O que chamou atenção:</strong> Ao cortar uma maçã e deixá-la descansando em um prato,
+                    notamos que em questão de minutos a polpa da fruta, que originalmente era clara e amarelada, começa
+                    a ganhar uma coloração marrom com aspecto oxidado.
                 </p>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="200" class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vercel-blue to-cyan-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div data-aos="fade-up" data-aos-delay="200"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vercel-blue to-cyan-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
                 <div class="flex items-center justify-between mb-8">
-                    <div class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-vercel-blue"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-vercel-blue">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <path d="M12 17h.01" />
+                        </svg>
                     </div>
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Yan</span>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Yan</span>
                 </div>
                 <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">2. Problema</h2>
-                <p class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
-                    <strong>A pergunta científica:</strong> Por que a maçã muda de cor e escurece apenas depois de ser cortada e exposta ao ambiente? O que está no ar ou na faca que causa essa transformação química de forma tão rápida?
+                <p
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
+                    <strong>A pergunta científica:</strong> Por que a maçã muda de cor e escurece apenas depois de ser
+                    cortada e exposta ao ambiente? O que está no ar ou na faca que causa essa transformação química de
+                    forma tão rápida?
                 </p>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="300" class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-orange-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div data-aos="fade-up" data-aos-delay="300"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-orange-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
                 <div class="flex items-center justify-between mb-8">
-                    <div class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.9 1.2 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-amber-500">
+                            <path
+                                d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.9 1.2 1.5 1.5 2.5" />
+                            <path d="M9 18h6" />
+                            <path d="M10 22h4" />
+                        </svg>
                     </div>
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Miguel</span>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Miguel</span>
                 </div>
                 <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">3. Hipótese</h2>
-                <p class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
-                    <strong>Nosso palpite:</strong> O oxigênio presente no ar reage com as substâncias do interior da maçã quando a casca é rompida. Acreditamos que isolar a maçã do ar ou aplicar um ácido cítrico (como suco de limão) impedirá essa reação.
+                <p
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
+                    <strong>Nosso palpite:</strong> O oxigênio presente no ar reage com as substâncias do interior da
+                    maçã quando a casca é rompida. Acreditamos que isolar a maçã do ar ou aplicar um ácido cítrico (como
+                    suco de limão) impedirá essa reação.
                 </p>
             </div>
 
-            <div data-aos="fade-right" data-aos-delay="100" class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group md:col-span-2">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div data-aos="fade-right" data-aos-delay="100"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group md:col-span-2">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
                 <div class="flex items-center justify-between mb-8">
-                    <div class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 transition-transform duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-400"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg>
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-purple-400">
+                            <path d="M10 2v7.31" />
+                            <path d="M14 9.3V1.99" />
+                            <path d="M8.5 2h7" />
+                            <path d="M14 9.3a6.5 6.5 0 1 1-4 0" />
+                            <path d="M5.52 16h12.96" />
+                        </svg>
                     </div>
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Halerrandro</span>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Halerrandro</span>
                 </div>
                 <h2 class="text-xl sm:text-2xl font-bold mb-6 text-white">4. Experimento</h2>
-                <div class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <div class="group-hover:text-neutral-300 transition-colors">
                         <strong class="block text-white mb-3 text-lg">O que testar e como:</strong>
                         Cortaremos uma maçã em 3 fatias iguais para comparar ambientes por 1 hora:
                         <ul class="mt-4 space-y-3">
-                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia A (Controle):</strong> Exposta livremente ao ar livre.</li>
-                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia B:</strong> Banhada com gotas de suco de limão.</li>
-                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia C:</strong> Embalada firmemente em plástico filme.</li>
+                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia
+                                    A (Controle):</strong> Exposta livremente ao ar livre.</li>
+                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia
+                                    B:</strong> Banhada com gotas de suco de limão.</li>
+                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia
+                                    C:</strong> Embalada firmemente em plástico filme.</li>
                         </ul>
                     </div>
                     <div class="bg-zinc-900/50 p-5 rounded-xl border border-zinc-800/50">
@@ -172,71 +259,119 @@
                 </div>
             </div>
 
-            <div data-aos="fade-left" data-aos-delay="200" class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div data-aos="fade-left" data-aos-delay="200"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
                 <div class="flex items-center justify-between mb-8">
-                    <div class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-emerald-400">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
                     </div>
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Filinto</span>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Filinto</span>
                 </div>
                 <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">5. Análise</h2>
-                <p class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
-                    <strong>Observações:</strong> A Fatia A (Controle) começou a escurecer após 15 min. A Fatia B (Limão) continuou clara e intacta. A Fatia C (Plástico) demorou muito mais, apresentando leves manchas. 
+                <p
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
+                    <strong>Observações:</strong> A Fatia A (Controle) começou a escurecer após 15 min. A Fatia B
+                    (Limão) continuou clara e intacta. A Fatia C (Plástico) demorou muito mais, apresentando leves
+                    manchas.
                     <br><br>
-                    <span class="inline-block p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-lg text-emerald-100 mt-2">
-                        <em>Inesperado:</em> A Fatia C escureceu um pouquinho porque oxigênio residual ficou preso no plástico.
+                    <span
+                        class="inline-block p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-lg text-emerald-100 mt-2">
+                        <em>Inesperado:</em> A Fatia C escureceu um pouquinho porque oxigênio residual ficou preso no
+                        plástico.
                     </span>
                 </p>
             </div>
 
-            <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-offset="50" class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-10 flex flex-col h-full relative overflow-hidden group md:col-span-2 lg:col-span-3">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vercel-blue via-purple-500 to-vercel-blue opacity-50 group-hover:opacity-100 transition-opacity duration-500 bg-[length:200%_auto] animate-[gradient_2s_linear_infinite]"></div>
-                
-                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
-                    <div class="p-4 bg-vercel-blue/10 rounded-2xl border border-vercel-blue/20 group-hover:bg-vercel-blue/20 transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-vercel-blue"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-widest px-4 py-2 bg-vercel-text text-black rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)]">Resultados Visuais • Registro</span>
+            <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-offset="50"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-10 flex flex-col h-full relative overflow-hidden group md:col-span-2 lg:col-span-3">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vercel-blue via-purple-500 to-vercel-blue opacity-50 group-hover:opacity-100 transition-opacity duration-500 bg-[length:200%_auto] animate-[gradient_2s_linear_infinite]">
                 </div>
-                
+
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
+                    <div
+                        class="p-4 bg-vercel-blue/10 rounded-2xl border border-vercel-blue/20 group-hover:bg-vercel-blue/20 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-vercel-blue">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest px-4 py-2 bg-vercel-text text-black rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)]">Resultados
+                        Visuais • Registro</span>
+                </div>
+
                 <h2 class="text-2xl sm:text-4xl font-bold mb-8 text-white">6. Evidência Fotográfica</h2>
-                
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
                     <div class="flex flex-col gap-4">
-                        <div class="relative group/img overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 aspect-square sm:aspect-[4/3]">
-                            <img src="assets/antes.jpg" alt="Antes do experimento" class="w-full h-full object-cover opacity-80 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-500">
-                            <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl pointer-events-none"></div>
-                            <div class="absolute bottom-4 left-4 right-4 text-center bg-black/60 backdrop-blur-md text-white py-2 px-4 rounded-lg font-medium tracking-wide border border-white/10">Antes do Experimento</div>
+                        <div
+                            class="relative group/img overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 aspect-square sm:aspect-[4/3]">
+                            <img src="assets/antes.jpeg" alt="Antes do experimento"
+                                class="w-full h-full object-cover opacity-80 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-500">
+                            <div
+                                class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute bottom-4 left-4 right-4 text-center bg-black/60 backdrop-blur-md text-white py-2 px-4 rounded-lg font-medium tracking-wide border border-white/10">
+                                Antes do Experimento</div>
                         </div>
-                        <p class="text-vercel-muted text-sm text-center px-4">Polpa clara e aspecto fresco imediatamente após o corte e aplicação dos métodos.</p>
+                        <p class="text-vercel-muted text-sm text-center px-4">Polpa clara e aspecto fresco imediatamente
+                            após o corte e aplicação dos métodos.</p>
                     </div>
                     <div class="flex flex-col gap-4">
-                        <div class="relative group/img overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 aspect-square sm:aspect-[4/3]">
-                            <img src="assets/depois.jpg" alt="Depois do experimento" class="w-full h-full object-cover opacity-80 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-500">
-                            <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl pointer-events-none"></div>
-                            <div class="absolute bottom-4 left-4 right-4 text-center bg-black/60 backdrop-blur-md text-white py-2 px-4 rounded-lg font-medium tracking-wide border border-white/10">Depois do Experimento</div>
+                        <div
+                            class="relative group/img overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 aspect-square sm:aspect-[4/3]">
+                            <img src="assets/depois.jpeg" alt="Depois do experimento"
+                                class="w-full h-full object-cover opacity-80 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-500">
+                            <div
+                                class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute bottom-4 left-4 right-4 text-center bg-black/60 backdrop-blur-md text-white py-2 px-4 rounded-lg font-medium tracking-wide border border-white/10">
+                                Depois do Experimento</div>
                         </div>
-                        <p class="text-vercel-muted text-sm text-center px-4">Resultados visíveis da oxidação nas fatias, evidenciando o efeito do tempo e exposição.</p>
+                        <p class="text-vercel-muted text-sm text-center px-4">Resultados visíveis da oxidação nas
+                            fatias, evidenciando o efeito do tempo e exposição.</p>
                     </div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4 pt-10 border-t border-zinc-800/50">
-                    <div class="p-4 bg-vercel-blue/10 rounded-2xl border border-vercel-blue/20 group-hover:bg-vercel-blue/20 transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-vercel-blue"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4 pt-10 border-t border-zinc-800/50">
+                    <div
+                        class="p-4 bg-vercel-blue/10 rounded-2xl border border-vercel-blue/20 group-hover:bg-vercel-blue/20 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-vercel-blue">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-widest px-4 py-2 bg-vercel-text text-black rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)]">Conclusão Final • Equipe</span>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest px-4 py-2 bg-vercel-text text-black rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)]">Conclusão
+                        Final • Equipe</span>
                 </div>
-                
+
                 <h2 class="text-2xl sm:text-4xl font-bold mb-8 text-white">7. Conclusão</h2>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
                     <div class="bg-zinc-900/40 p-6 sm:p-8 rounded-xl border border-zinc-800">
                         <strong class="text-white text-xl block mb-4 flex items-center gap-2">
                             <span class="text-green-500">✓</span> A hipótese foi confirmada?
                         </strong>
                         <p class="text-vercel-muted text-base sm:text-lg leading-relaxed">
-                            Sim! Confirmamos que o escurecimento é causado pelo contato direto com o oxigênio do ar e que pode ser inibido através de intervenções químicas (ácido) e físicas (barreira).
+                            Sim! Confirmamos que o escurecimento é causado pelo contato direto com o oxigênio do ar e
+                            que pode ser inibido através de intervenções químicas (ácido) e físicas (barreira).
                         </p>
                     </div>
                     <div class="bg-zinc-900/40 p-6 sm:p-8 rounded-xl border border-zinc-800">
@@ -244,7 +379,10 @@
                             <span class="text-blue-500">💡</span> O que aprendemos:
                         </strong>
                         <p class="text-vercel-muted text-base sm:text-lg leading-relaxed">
-                            As maçãs contêm uma enzima chamada <strong class="text-white">Polifenol Oxidase (PPO)</strong>. O corte rompe as células, expondo a enzima ao oxigênio. Isso oxida os compostos fenólicos, gerando melanina vegetal (a cor marrom). O ácido do limão desnatura essa enzima, parando a reação.
+                            As maçãs contêm uma enzima chamada <strong class="text-white">Polifenol Oxidase
+                                (PPO)</strong>. O corte rompe as células, expondo a enzima ao oxigênio. Isso oxida os
+                            compostos fenólicos, gerando melanina vegetal (a cor marrom). O ácido do limão desnatura
+                            essa enzima, parando a reação.
                         </p>
                     </div>
                 </div>
@@ -256,7 +394,8 @@
     <footer class="mt-24 sm:mt-32 border-t border-vercel-border/50 pt-10 text-center pb-12 px-4">
         <p data-aos="fade-up" class="text-vercel-muted text-sm sm:text-base">
             Projeto de Ciências desenvolvido por:<br>
-            <strong class="text-white text-base sm:text-lg mt-2 inline-block font-medium">Alexandre • Yan • Miguel • Halerrandro • Filinto</strong>
+            <strong class="text-white text-base sm:text-lg mt-2 inline-block font-medium">Alexandre • Yan • Miguel •
+                Halerrandro • Filinto</strong>
         </p>
     </footer>
 
@@ -271,5 +410,418 @@
         });
     </script>
 </body>
-</html>
 
+</html><!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso 1: O Escurecimento da Maçã</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        vercel: {
+                            dark: '#000000',
+                            card: '#0a0a0a',
+                            border: '#333333',
+                            hover: '#1f1f1f',
+                            text: '#ededed',
+                            muted: '#888888',
+                            blue: '#0070f3'
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #000;
+            background-image:
+                radial-gradient(circle at 50% 0%, rgba(26, 26, 26, 0.8) 0%, #000 70%),
+                linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+            overflow-x: hidden;
+        }
+
+        .vercel-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        .vercel-card:hover {
+            border-color: #666;
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+
+        /* Esconde a barra de rolagem mas mantém a funcionalidade */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body
+    class="text-vercel-text font-sans antialiased min-h-screen pb-20 selection:bg-vercel-blue selection:text-white relative">
+
+    <div
+        class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-vercel-blue opacity-[0.05] blur-[120px] rounded-full pointer-events-none -z-10">
+    </div>
+
+    <header class="max-w-6xl mx-auto px-4 sm:px-6 pt-20 sm:pt-32 pb-16 sm:pb-24 text-center">
+        <div data-aos="fade-down" data-aos-duration="1000"
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-vercel-border bg-vercel-card/80 backdrop-blur-sm text-xs font-medium text-vercel-muted mb-8 hover:border-vercel-blue/50 transition-colors cursor-default">
+            <span class="w-2 h-2 rounded-full bg-vercel-blue animate-pulse"></span>
+            Relatório Científico Interativo
+        </div>
+
+        <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100"
+            class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-neutral-600 leading-tight">
+            Por que as maçãs<br class="hidden sm:block"> escurecem cortadas?
+        </h1>
+
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+            class="text-vercel-muted text-base sm:text-xl max-w-2xl mx-auto px-4">
+            Uma investigação sobre oxidação enzimática, documentada passo a passo através do método científico.
+        </p>
+
+        <div data-aos="fade-up" data-aos-delay="500" class="mt-16 animate-bounce flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-vercel-muted">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+
+            <div data-aos="fade-up" data-aos-delay="100"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-zinc-800 to-zinc-500 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div class="flex items-center justify-between mb-8">
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-zinc-300">
+                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Alexandre</span>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">1. Observação</h2>
+                <p
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
+                    <strong>O que chamou atenção:</strong> Ao cortar uma maçã e deixá-la descansando em um prato,
+                    notamos que em questão de minutos a polpa da fruta, que originalmente era clara e amarelada, começa
+                    a ganhar uma coloração marrom com aspecto oxidado.
+                </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vercel-blue to-cyan-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div class="flex items-center justify-between mb-8">
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-vercel-blue">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <path d="M12 17h.01" />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Yan</span>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">2. Problema</h2>
+                <p
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
+                    <strong>A pergunta científica:</strong> Por que a maçã muda de cor e escurece apenas depois de ser
+                    cortada e exposta ao ambiente? O que está no ar ou na faca que causa essa transformação química de
+                    forma tão rápida?
+                </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-orange-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div class="flex items-center justify-between mb-8">
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-amber-500">
+                            <path
+                                d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.9 1.2 1.5 1.5 2.5" />
+                            <path d="M9 18h6" />
+                            <path d="M10 22h4" />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Miguel</span>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">3. Hipótese</h2>
+                <p
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
+                    <strong>Nosso palpite:</strong> O oxigênio presente no ar reage com as substâncias do interior da
+                    maçã quando a casca é rompida. Acreditamos que isolar a maçã do ar ou aplicar um ácido cítrico (como
+                    suco de limão) impedirá essa reação.
+                </p>
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="100"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group md:col-span-2">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div class="flex items-center justify-between mb-8">
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-purple-400">
+                            <path d="M10 2v7.31" />
+                            <path d="M14 9.3V1.99" />
+                            <path d="M8.5 2h7" />
+                            <path d="M14 9.3a6.5 6.5 0 1 1-4 0" />
+                            <path d="M5.52 16h12.96" />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Halerrandro</span>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-6 text-white">4. Experimento</h2>
+                <div
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="group-hover:text-neutral-300 transition-colors">
+                        <strong class="block text-white mb-3 text-lg">O que testar e como:</strong>
+                        Cortaremos uma maçã em 3 fatias iguais para comparar ambientes por 1 hora:
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia
+                                    A (Controle):</strong> Exposta livremente ao ar livre.</li>
+                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia
+                                    B:</strong> Banhada com gotas de suco de limão.</li>
+                            <li class="flex items-start gap-2"><span class="text-purple-500 mt-1">●</span> <strong>Fatia
+                                    C:</strong> Embalada firmemente em plástico filme.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-zinc-900/50 p-5 rounded-xl border border-zinc-800/50">
+                        <strong class="block text-white mb-3 text-lg">Materiais Necessários:</strong>
+                        <ul class="grid grid-cols-2 gap-2 text-sm">
+                            <li class="flex items-center gap-2"><span>🍎</span> 1 Maçã fresca</li>
+                            <li class="flex items-center gap-2"><span>🔪</span> 1 Faca</li>
+                            <li class="flex items-center gap-2"><span>🍋</span> Meio limão</li>
+                            <li class="flex items-center gap-2"><span>🧻</span> Plástico filme</li>
+                            <li class="flex items-center gap-2"><span>🍽️</span> 3 pratos</li>
+                            <li class="flex items-center gap-2"><span>⏱️</span> Cronômetro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-delay="200"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-8 flex flex-col h-full relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-400 opacity-50 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div class="flex items-center justify-between mb-8">
+                    <div
+                        class="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-emerald-400">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 bg-white text-black rounded-full shadow-[0_0_15px_rgba(255,255,255,0.2)]">Filinto</span>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">5. Análise</h2>
+                <p
+                    class="text-vercel-muted text-sm sm:text-base leading-relaxed flex-grow group-hover:text-neutral-300 transition-colors">
+                    <strong>Observações:</strong> A Fatia A (Controle) começou a escurecer após 15 min. A Fatia B
+                    (Limão) continuou clara e intacta. A Fatia C (Plástico) demorou muito mais, apresentando leves
+                    manchas.
+                    <br><br>
+                    <span
+                        class="inline-block p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-lg text-emerald-100 mt-2">
+                        <em>Inesperado:</em> A Fatia C escureceu um pouquinho porque oxigênio residual ficou preso no
+                        plástico.
+                    </span>
+                </p>
+            </div>
+
+            <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-offset="50"
+                class="vercel-card border border-vercel-border rounded-2xl p-6 sm:p-10 flex flex-col h-full relative overflow-hidden group md:col-span-2 lg:col-span-3">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vercel-blue via-purple-500 to-vercel-blue opacity-50 group-hover:opacity-100 transition-opacity duration-500 bg-[length:200%_auto] animate-[gradient_2s_linear_infinite]">
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
+                    <div
+                        class="p-4 bg-vercel-blue/10 rounded-2xl border border-vercel-blue/20 group-hover:bg-vercel-blue/20 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-vercel-blue">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest px-4 py-2 bg-vercel-text text-black rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)]">Resultados
+                        Visuais • Registro</span>
+                </div>
+
+                <h2 class="text-2xl sm:text-4xl font-bold mb-8 text-white">6. Evidência Fotográfica</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="relative group/img overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 aspect-square sm:aspect-[4/3]">
+                            <img src="assets/antes.jpeg" alt="Antes do experimento"
+                                class="w-full h-full object-cover opacity-80 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-500">
+                            <div
+                                class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute bottom-4 left-4 right-4 text-center bg-black/60 backdrop-blur-md text-white py-2 px-4 rounded-lg font-medium tracking-wide border border-white/10">
+                                Antes do Experimento</div>
+                        </div>
+                        <p class="text-vercel-muted text-sm text-center px-4">Polpa clara e aspecto fresco imediatamente
+                            após o corte e aplicação dos métodos.</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="relative group/img overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 aspect-square sm:aspect-[4/3]">
+                            <img src="assets/depois.jpeg" alt="Depois do experimento"
+                                class="w-full h-full object-cover opacity-80 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-500">
+                            <div
+                                class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl pointer-events-none">
+                            </div>
+                            <div
+                                class="absolute bottom-4 left-4 right-4 text-center bg-black/60 backdrop-blur-md text-white py-2 px-4 rounded-lg font-medium tracking-wide border border-white/10">
+                                Depois do Experimento</div>
+                        </div>
+                        <p class="text-vercel-muted text-sm text-center px-4">Resultados visíveis da oxidação nas
+                            fatias, evidenciando o efeito do tempo e exposição.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4 pt-10 border-t border-zinc-800/50">
+                    <div
+                        class="p-4 bg-vercel-blue/10 rounded-2xl border border-vercel-blue/20 group-hover:bg-vercel-blue/20 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-vercel-blue">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest px-4 py-2 bg-vercel-text text-black rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)]">Conclusão
+                        Final • Equipe</span>
+                </div>
+
+                <h2 class="text-2xl sm:text-4xl font-bold mb-8 text-white">7. Conclusão</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+                    <div class="bg-zinc-900/40 p-6 sm:p-8 rounded-xl border border-zinc-800">
+                        <strong class="text-white text-xl block mb-4 flex items-center gap-2">
+                            <span class="text-green-500">✓</span> A hipótese foi confirmada?
+                        </strong>
+                        <p class="text-vercel-muted text-base sm:text-lg leading-relaxed">
+                            Sim! Confirmamos que o escurecimento é causado pelo contato direto com o oxigênio do ar e
+                            que pode ser inibido através de intervenções químicas (ácido) e físicas (barreira).
+                        </p>
+                    </div>
+                    <div class="bg-zinc-900/40 p-6 sm:p-8 rounded-xl border border-zinc-800">
+                        <strong class="text-white text-xl block mb-4 flex items-center gap-2">
+                            <span class="text-blue-500">💡</span> O que aprendemos:
+                        </strong>
+                        <p class="text-vercel-muted text-base sm:text-lg leading-relaxed">
+                            As maçãs contêm uma enzima chamada <strong class="text-white">Polifenol Oxidase
+                                (PPO)</strong>. O corte rompe as células, expondo a enzima ao oxigênio. Isso oxida os
+                            compostos fenólicos, gerando melanina vegetal (a cor marrom). O ácido do limão desnatura
+                            essa enzima, parando a reação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="mt-24 sm:mt-32 border-t border-vercel-border/50 pt-10 text-center pb-12 px-4">
+        <p data-aos="fade-up" class="text-vercel-muted text-sm sm:text-base">
+            Projeto de Ciências desenvolvido por:<br>
+            <strong class="text-white text-base sm:text-lg mt-2 inline-block font-medium">Alexandre • Yan • Miguel •
+                Halerrandro • Filinto</strong>
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa as animações
+        AOS.init({
+            duration: 800, // duração da animação em ms
+            easing: 'ease-out-cubic', // estilo da curva de animação
+            once: false, // se true, a animação ocorre apenas uma vez. false = anima sempre que fizer scroll
+            offset: 50, // distância de rolagem antes de animar
+        });
+    </script>
+</body>
+
+</html>
